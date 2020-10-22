@@ -1,12 +1,11 @@
+
 // function to generate markdown for README
 function generateMarkdown(data) {
 
-  let line = `---\n`;
-
-
+  //add title
   let content = `# ${data.title}\n\n`;
-  content += line;
 
+  // add selected licence
   switch (data.licence) {
     case "Apache-2.0":
       content += `[![License: ISC](https://img.shields.io/badge/Apache-2.0-lightgreen.svg)](https://opensource.org/licenses/https://opensource.org/licenses/Apache-2.0)\n\n`;
@@ -21,70 +20,69 @@ function generateMarkdown(data) {
       content += `[![License: ISC](https://img.shields.io/badge/Licence-Modified-BSD-blue.svg)](https://www.grassvalley.com/about/open_software/modified_bsd_license/)\n\n`;
       break;
     case "None":
-      content += `[![License: ISC](https://img.shields.io/badge/Licence-None-white.svg)]\n\n`;
+      content += `![License: ISC](https://img.shields.io/badge/Licence-None-white.svg)]\n\n`;
       break;
   }
 
-  if (data.description == "") {
+  //add description
+  if (data.description.trim() == "") {
     content += `## Project description
     Something about your project...\n`;
   } else {
     content += `## Project description
-    ${data.description}\n\n`;
+    ${data.description.trim()}\n\n`;
   }
-  content += line;
 
+  //add table of contents
   content += `## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests-information)\n\n`;
-  content += line;
 
-  if (data.installation == "") {
+  //add installation
+  if (data.installation.trim() == "") {
     content += `## Installation
-    How to install this project...\n\n`;
+    How to install this project...\n\n
+    step 1...
+    step 2...
+    ......\n\n`;
   } else {
     content += `## Installation
-    ${data.installation}\n\n`;
+    ${data.installation.trim()}\n\n`;
   }
-  content += line;
 
-  if (data.usage == "") {
+  //add usage
+  if (data.usage.trim() == "") {
     content += `## Usage
     This project is used for...\n\n`;
   } else {
     content += `## Usage
-    ${data.usage}\n\n`;
+    ${data.usage.trim()}\n\n`;
   }
-  content += line;
 
-  if (data.contribution == "") {
+  //add contributing
+  if (data.contribution.trim() == "") {
     content += `## Contributing
     Contributions...\n\n`;
   } else {
     content += `## Contributing
-    ${data.contribution}\n\n`;
+    ${data.contribution.trim()}\n\n`;
   }
-  content += line;
 
-  if (data.test == "") {
+  //add tests information
+  if (data.test.trim() == "") {
     content += `## Tests information
     Tests information...\n\n`;
   } else {
     content += `## Tests information
-    ${data.test}\n\n`;
+    ${data.test.trim()}\n\n`;
   }
-  content += line;
 
-  content += `## GitHub USERNAME
-    ${data.username}\n\n`;
-  content += line;
-
-  content += `## Email-address
-    ${data.email}\n\n`;
-  content += line;
-
+  //add author information
+  content += `## Author information
+  GitHub: https://github.com/${data.username}\n\n
+  Email-address: ${data.email}\n\n`;
 
   return content;
 }
