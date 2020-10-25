@@ -8,16 +8,16 @@ function generateMarkdown(data) {
   // add selected licence
   switch (data.licence) {
     case "Apache-2.0":
-      content += `[![License: ISC](https://img.shields.io/badge/Apache-2.0-lightgreen.svg)(https://opensource.org/licenses/https://opensource.org/licenses/Apache-2.0)\n\n`;
+      content += `[![License: ISC](https://img.shields.io/badge/Apache-2.0-lightgreen.svg)](https://opensource.org/licenses/https://opensource.org/licenses/Apache-2.0)]\n\n`;
       break;
     case "CC0-1.0":
-      content += `[![License: ISC](https://img.shields.io/badge/CC0-1.0-blue.svg)(https://choosealicense.com/licenses/cc0-1.0/)\n\n`;
+      content += `[![License: ISC](https://img.shields.io/badge/CC0-1.0-blue.svg)](https://choosealicense.com/licenses/cc0-1.0/)\n\n`;
       break;
     case "MPL-2.0":
-      content += `[![License: ISC](https://img.shields.io/badge/MPL-2.0-blue.svg)(https://www.mozilla.org/en-US/MPL/2.0/)\n\n`;
+      content += `[![License: ISC](https://img.shields.io/badge/MPL-2.0-blue.svg)](https://www.mozilla.org/en-US/MPL/2.0/)\n\n`;
       break;
     case "Modified-BSD":
-      content += `[![License: ISC](https://img.shields.io/badge/Licence-Modified-BSD-blue.svg)(https://www.grassvalley.com/about/open_software/modified_bsd_license/)\n\n`;
+      content += `[![License: ISC](https://img.shields.io/badge/Licence-Modified-BSD-blue.svg)](https://www.grassvalley.com/about/open_software/modified_bsd_license/)\n\n`;
       break;
     case "None":
       content += `![License: ISC](https://img.shields.io/badge/Licence-None-white.svg)\n\n`;

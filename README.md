@@ -1,6 +1,7 @@
 # Good README Generator
 
 ![License: ISC](https://img.shields.io/badge/Licence-None-white.svg)
+[![License: ISC](https://img.shields.io/badge/Apache-2.0-lightgreen.svg)](https://opensource.org/licenses/https://opensource.org/licenses/Apache-2.0)
 
 ## Project description
     This application can generate a hight-quality formated README.md file!
