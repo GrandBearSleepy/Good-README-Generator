@@ -1,7 +1,8 @@
-//using package
+//using package and module
 const inquirer = require("inquirer");
 const fs = require("fs");
 const md = require("./utils/generateMarkdown.js");
+
 
 //User instruction
 function userInstruction() {
@@ -17,67 +18,67 @@ function userInstruction() {
 const questions = [
     {
         type: "input",
-        message: "What is the title of your project?(Required)",
+        message: "What is the <Title> of your project?(Required)",
         name: "title",
         validate: function (value) {
             if (value.trim().length) {
                 return true;
             }
             else {
-                return "Please enter your project TITLE!";
+                return "Please enter your project <Title>!";
             }
 
         }
     },
     {
         type: "input",
-        message: "Please write some description for your project:",
+        message: "Please write some <Description> for your project:",
         name: "description"
     },
     {
         type: "input",
-        message: "please write the installation instruction:",
+        message: "please write the <Installation> instruction:",
         name: "installation"
     },
     {
         type: "input",
-        message: "Please write the usage information:",
+        message: "Please write the <Usage> information:",
         name: "usage"
     },
     {
         type: "input",
-        message: "Please write the contribution guidelines:",
+        message: "Please write the <Contribution> guidelines:",
         name: "contribution"
     },
     {
         type: "input",
-        message: "Please write the tests information:",
+        message: "Please write the <Tests> information:",
         name: "test"
     },
     {
         type: "input",
-        message: "Please enter your GitHub username:(Required)",
+        message: "Please enter your <GitHub username>:(Required)",
         name: "username",
         validate: function (value) {
             if (value.trim().length) {
                 return true;
             }
             else {
-                return "Please enter your GitHub USERNAME!";
+                return "Please enter your <GitHub USERNAME>!";
             }
 
         }
     },
     {
         type: "input",
-        message: "Please enter your email address:(Required)",
+        message: "Please enter your <Email> address:(Required)",
         name: "email",
         validate: function (email) {
             valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
             if (valid) {
                 return true;
             } else {
-                return "Please enter a valid email";
+                return "Please enter a valid <Email>";
             }
         }
     },

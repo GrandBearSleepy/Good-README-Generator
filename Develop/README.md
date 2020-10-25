@@ -1,9 +1,9 @@
-# eke
+# Good README.md Generator
 
-[![License: ISC](https://img.shields.io/badge/CC0-1.0-blue.svg)](https://choosealicense.com/licenses/cc0-1.0/)
+![License: ISC](https://img.shields.io/badge/Licence-None-white.svg)]
 
 ## Project description
-    dkd
+    This application can generate a hight-quality formated README.md file!
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,23 +12,19 @@
 * [Tests](#tests-information)
 
 ## Installation
-    How to install this project...
+    1.Download and install node.js. \n 2.Download this app
 
-
-    step 1...
-    step 2...
-    ...## Usage
-    This project is used for...
+## Usage
+    Using 'node index.js' to start this app.
 
 ## Contributing
-    Contributions...
+    Any one is welcome to  contribute this app, expect to hear some good idears from you.
 
 ## Tests information
-    Tests information...
+    Testing.. Testing... Testing.....
 
 ## Author information
-  GitHub: https://github.com/dfdf
+  GitHub: https://github.com/GrandBearSleepy
 
-
-  Email-address: dsf@fsdf.com
+  Email-address: Hengquan.Li@outlook.com
 
