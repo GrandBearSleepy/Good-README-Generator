@@ -8,7 +8,7 @@ function generateMarkdown(data) {
   // add selected licence
   switch (data.licence) {
     case "Apache-2.0":
-      content += `[![License: ISC](https://img.shields.io/badge/Apache-2.0-lightgreen.svg)](https://opensource.org/licenses/https://opensource.org/licenses/Apache-2.0)]\n\n`;
+      content += `[![License: ISC](https://img.shields.io/badge/Apache-2.0-lightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)]\n\n`;
       break;
     case "CC0-1.0":
       content += `[![License: ISC](https://img.shields.io/badge/CC0-1.0-blue.svg)](https://choosealicense.com/licenses/cc0-1.0/)\n\n`;
